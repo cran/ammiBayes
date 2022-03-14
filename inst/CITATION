@@ -1,17 +1,21 @@
 citHeader("To cite ammiBayes in publications use:")
 
 citEntry(entry  = "Manual",
-         title  = "Bayesian AMMI for ordinal data.",
-         author = "Cristiano Tiago Erazo Mendes,
-                   Carlos Pereira da Silva,         
+         title  = "Bayesian AMMI for continuous data.",
+         author = "Luciano Antonio de Oliveira,
+                   Carlos Pereira da Silva,
+                   Cristian Tiago Erazo Mendes,
+                   Alessandra Querino da Silva,
+                   Joel Jorge Nuvunga,
+                   Marcio Balestre,
                    Julio Silvio de Sousa Bueno Filho,
                    Fabio Mathias Correa",
-         organization = "Universidade Federal de Lavras and Rhodes University",
+         organization = "Universidade Federal de Lavras, Universidade Federal da Grande Dourados, Eduardo Mondlane University, and Rhodes University",
          year         = version$year,
 
          textVersion =
-         paste("Mendes, C.T.E.; Silva, C.P.; Bueno Filho, J.S.S; and Correa, F.M. (", version$year, ").",
-               "Bayesian AMMI for ordinal data.")               
+         paste("Oliveira, L.A; Silva, C.P.; Mendes, C.T.E.; Silva, A.Q.; Nuvunga, J.J.; Balestre, M.; Bueno Filho, J.S.S.; and Correa, F.M. (", version$year, ").",
+               "Bayesian AMMI for continuous data.")               
          )
 
 citFooter("Lots of time and effort were invested in creating ammiBayes package.",

@@ -2,11 +2,11 @@
 \alias{ammiBayes}
 
 \title{
-  Bayesian AMMI for ordinal data
+  Bayesian AMMI for continuous data
 }
 
 \description{
-    Run the AMMI Bayesian model for ordinal data.
+    Run the AMMI Bayesian model for continuous data.
 }
 
 \usage{
@@ -34,11 +34,24 @@ ammiBayes(Y=Y, Gen=Gen, Env=Env, Rep=Rep,
   The code is run in parallel for linux SO. If you are using Windows, the execution of the code will be serially. 
   }
 
+\references{
+OLIVEIRA,L.A.; SILVA, C. P.; NUVUNGA, J. J.; SILVA, A. Q.; BALESTRE, M. Credible Intervals for Scores in the AMMI with Random Effects for Genotype. Crop Science, v. 55, p. 465-476, 2015.
+doi:  https://doi.org/10.2135/cropsci2014.05.0369
+
+SILVA, C. P.; OLIVEIRA, L. A.; NUVUNGA, J. J.; PAMPLONA, A. K. A.; BALESTRE, M. A Bayesian Shrinkage Approach for AMMI Models. 
+Plos One, v. 10, p. e0131414, 2015. doi: https://doi.org/10.1371/journal.pone.0131414.
+} 
+
+
 \author{
-    Cristian Tiago Erazo Mendes (\email{tiagoerazo@gmail.com})\cr
-    Carlos Pereira da Silva (\email{ccpsilva81@hotmail.com})\cr
-    Julio Silvio de Sousa Bueno Filho (\email{jssbueno@ufla.br})\cr
-    Fabio Mathias Correa (\email{f.correa@ru.ac.za})
+        Luciano A. Oliveira \cr
+        Carlos P. Silva \cr
+        Cristian T. E. Mendes \cr
+        Alessandra Q. Silva \cr
+        Joel J. Nuvunga \cr
+        Marcio Balestre \cr
+        Julio S. S. Bueno-Filho \cr
+		Fabio M. Correa
 }
 
 

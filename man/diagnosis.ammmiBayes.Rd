@@ -23,11 +23,24 @@ diagnosis.ammiBayes(x, pars=NULL)
     Examples can be seen on the website: \code{\link[bayesplot]{bayesplot}}
 }
 
+\references{
+OLIVEIRA,L.A.; SILVA, C. P.; NUVUNGA, J. J.; SILVA, A. Q.; BALESTRE, M. Credible Intervals for Scores in the AMMI with Random Effects for Genotype. Crop Science, v. 55, p. 465-476, 2015.
+doi:  https://doi.org/10.2135/cropsci2014.05.0369
+
+SILVA, C. P.; OLIVEIRA, L. A.; NUVUNGA, J. J.; PAMPLONA, A. K. A.; BALESTRE, M. A Bayesian Shrinkage Approach for AMMI Models. 
+Plos One, v. 10, p. e0131414, 2015. doi: https://doi.org/10.1371/journal.pone.0131414.
+} 
+
+
 \author{
-    Cristian Tiago Erazo Mendes (\email{tiagoerazo@gmail.com})\cr
-    Carlos Pereira da Silva (\email{ccpsilva81@hotmail.com})\cr
-    Julio Silvio de Sousa Bueno Filho (\email{jssbueno@ufla.br})\cr
-    Fabio Mathias Correa (\email{f.correa@ru.ac.za})
+        Luciano A. Oliveira \cr
+        Carlos P. Silva \cr
+        Cristian T. E. Mendes \cr
+        Alessandra Q. Silva \cr
+        Joel J. Nuvunga \cr
+        Marcio Balestre \cr
+        Julio S. S. Bueno-Filho \cr
+		Fabio M. Correa
 }
 
 
