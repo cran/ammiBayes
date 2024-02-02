@@ -444,7 +444,7 @@ main.sample <- function(Y=NULL, Gen=NULL, Env=NULL, Rep=NULL, iter=iter, jump=ju
 
 				alpha <- crossprod.spam(w1,yxbzg)
 
-				Hg    <- cbind(matrix(1,ngen,1),U[,k<i],matrix(0,ngen,ngen-i))
+				Hg    <- cbind(matrix(1,ngen,1),U.sp[,k<i],matrix(0,ngen,ngen-i))
 				Hg[1:(ngen-i),(i+1):ncol(Hg)] <- diag(ngen-i)
 				# 			Hg <- Matrix(Hg, sparse=TRUE)
 				x.qr <- qr(Hg)
@@ -472,7 +472,7 @@ main.sample <- function(Y=NULL, Gen=NULL, Env=NULL, Rep=NULL, iter=iter, jump=ju
 
 				ipso <- crossprod.spam(w2,yxbzg)
 
-				He  <- cbind(matrix(1,namb,1),V[,k<i],matrix(0,namb,(namb-i)))
+				He  <- cbind(matrix(1,namb,1),V.sp[,k<i],matrix(0,namb,(namb-i)))
 				He[1:(namb-i),(i+1):ncol(He)] <- diag(namb-i)
 				x.qr <- qr(He)
 				Q    <- qr.Q(x.qr)

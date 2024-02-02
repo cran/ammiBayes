@@ -1,10 +1,10 @@
 Package: ammiBayes
 Type: Package
 Title: Bayesian Ammi Model for Continuous Data
-Version: 1.0-1
-Date: 2022-03-14
-Maintainer: Fabio M. Correa <f.correa@ru.ac.za>
-Contact: Fabio Mathias Correa <f.correa@ru.ac.za>
+Version: 1.0-2
+Date: 2024-02-01
+Maintainer: Fabio M. Correa <fmcron@protonmail.com>
+Contact: Fabio Mathias Correa <fmcron@protonmail.com>
 Authors@R: c( person("Luciano A.",  "Oliveira", role="aut")
  , person("Carlos P.", "Silva", role="aut")
  , person("Cristian T. E.", "Mendes", role="aut")
@@ -12,7 +12,7 @@ Authors@R: c( person("Luciano A.",  "Oliveira", role="aut")
  , person("Joel J.", "Nuvunga", role="aut")
  , person("Marcio", "Balestre", role="ths")
  , person("Julio S. S.", "Bueno-Filho", role="ths")
- , person("Fabio M.", "Correa", role=c("aut","cre"), email="f.correa@ru.ac.za", 
+ , person("Fabio M.", "Correa", role=c("aut","cre"), email="fmcron@protonmail.com", 
    comment = c(ORCID = "0000-0002-6708-9316"))
    )
 Author: Luciano A. Oliveira [aut],
@@ -33,6 +33,6 @@ Description: Flexible multi-environment trials analysis via MCMC method for Addi
  Biplot with the averages and regions of confidence can be generated. The chains run in parallel on Linux systems and run serially on Windows.
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2022-03-14 15:41:45 UTC; fmcron
+Packaged: 2024-02-01 19:27:25 UTC; fmcron
 Repository: CRAN
-Date/Publication: 2022-03-14 16:10:02 UTC
+Date/Publication: 2024-02-02 10:20:02 UTC

@@ -1,6 +1,6 @@
 citHeader("To cite ammiBayes in publications use:")
 
-citEntry(entry  = "Manual",
+bibentry(bibtype  = "Manual",
          title  = "Bayesian AMMI for continuous data.",
          author = "Luciano Antonio de Oliveira,
                    Carlos Pereira da Silva,
@@ -10,7 +10,7 @@ citEntry(entry  = "Manual",
                    Marcio Balestre,
                    Julio Silvio de Sousa Bueno Filho,
                    Fabio Mathias Correa",
-         organization = "Universidade Federal de Lavras, Universidade Federal da Grande Dourados, Eduardo Mondlane University, and Rhodes University",
+         organization = "Universidade Federal de Lavras, Universidade Federal da Grande Dourados, Eduardo Mondlane University, and University of the Free State",
          year         = version$year,
 
          textVersion =
