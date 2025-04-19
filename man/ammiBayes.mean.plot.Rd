@@ -57,9 +57,6 @@ Plos One, v. 10, p. e0131414, 2015. doi: https://doi.org/10.1371/journal.pone.01
 		Fabio M. Correa
 }
 
-\seealso{
-  \code{\link{lattice}}
-}
 
 \examples{
 

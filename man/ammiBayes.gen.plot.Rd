@@ -11,8 +11,8 @@
 
 \usage{
 ammiBayes.gen.plot(x, lwd=1, lty=1, pch=18, method="bars",
-                  col.bands=NULL, ylim=NULL,
-                  xlab=NULL, ylab=NULL, gen.names=NULL)
+ 				   col=NULL, ylim=NULL, draw.mean=TRUE, col.mean="red",
+				   lty.mean=2, xlab="Genotype", ylab=NULL, gen.names=NULL)
 }
 
 \arguments{
@@ -21,8 +21,11 @@ ammiBayes.gen.plot(x, lwd=1, lty=1, pch=18, method="bars",
   \item{lty}{The line type. Default is 1.}
   \item{pch}{Either an integer specifying a symbol or a single character to be used as the default in plotting points.}
   \item{method}{Defaults to \code{"bars"} to draw error-bar type plots. See \code{\link[Hmisc]{panel.xYplot}}.}
-  \item{col.bands}{Define the color of genotype bands.See \code{\link[Hmisc]{xYplot}}.}  
-  \item{ylim}{A numeric vector of length 2 giving minimum and maximum for the y-axis.}  
+  \item{col}{Define the color of genotype bands. See \code{\link[Hmisc]{xYplot}}.}  
+  \item{ylim}{A numeric vector of length 2 giving minimum and maximum for the y-axis.}
+  \item{draw.mean}{If TRUE, a line representing the average of all genotypes is plotted on the graph.}
+  \item{col.mean}{Define the color for the average of all genotypes.}
+  \item{lty.mean}{Line type for the average of all genotypes.}  
   \item{xlab}{Label for the x-axis.}    
   \item{ylab}{Label for the y-axis.}    
   \item{gen.names}{Define the names of genotypes on the x-axis. By default are the levels of the Genotypes.}        

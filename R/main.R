@@ -12,20 +12,6 @@ ammiBayes <- function(Y=Y, Gen=Gen, Env=Env, Rep=Rep, iterations=3000, jump=2, b
 
 	osp <- Sys.info()['sysname']
 
-
-#	cat("Iterations = ", iterations, "\n")
-#	cat("Burnin = ", burn, "\n")
-#	cat("Jump = ", jump, "\n")
-#	cat("Total of iterations = ", niter, "\n")
-
-#	cat("=====================================", "\n")
-
-#	cat("Using", paste(chains, "cores", sep=" "), "\n")
-
-#	cat("\n")
-
-#	cat("=====================================", "\n")
-
 	if(osp!="Linux"){
 
 	cat("Operational system detected:", osp, "\n")
@@ -316,6 +302,7 @@ main.sample <- function(Y=NULL, Gen=NULL, Env=NULL, Rep=NULL, iter=iter, jump=ju
 	invg <- diag.spam(ngen)
 	inicio <- proc.time()
 
+  pb <- txtProgressBar(min = 1, max=niter, style=3, char=' \U21D2')
 
 	for(itera in 1:niter)
 	{
@@ -516,7 +503,7 @@ main.sample <- function(Y=NULL, Gen=NULL, Env=NULL, Rep=NULL, iter=iter, jump=ju
 		rva  <- rchisq(1,(ngen))
 		va   <- (ssg/rva)  
 
-		pb <- txtProgressBar(min = 1, max=niter, style=3)
+#		pb <- txtProgressBar(min = 1, max=niter, style=3)
 		setTxtProgressBar(pb, itera)
 
 

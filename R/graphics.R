@@ -348,8 +348,8 @@ ammiBayes.mean.plot <-function(model, pars.gen=NULL, pars.env=NULL, gen.labels=N
 
 
 ammiBayes.gen.plot <- function(x, lwd=1, lty=1, pch=18, method="bars",
-															 col.bands=NULL, ylim=NULL,
-										 xlab=NULL, ylab=NULL, gen.names=NULL)
+															 col=NULL, ylim=NULL, draw.mean=TRUE, col.mean="red",
+															 lty.mean=2, xlab="Genotype", ylab=NULL, gen.names=NULL)
 {
 	if(!inherits(x, "ammiBayes")) stop("model must be an object ammiBayes")
 
@@ -366,11 +366,19 @@ ammiBayes.gen.plot <- function(x, lwd=1, lty=1, pch=18, method="bars",
 	}
 	
 	xdat[["vetx"]] <- 1:nrow(xdat)
+
+	if(draw.mean!=TRUE){ col.mean="transparent"}
+
+	med.pop <- mean(xdat$Mean)
 	
 		
 	xYplot(Cbind(Mean, lower, upper) ~ vetx, data=xdat, lwd=lwd, lty=lty,
-				 pch=pch, method=method, col.bands=col.bands, ylim=ylim,
-				 scales=list(x=list(at=1:tam.names, labels=g.names))
+				 pch=pch, method=method, col=col, ylim=ylim, xlab=xlab, ylab=ylab,
+				 scales=list(x=list(at=1:tam.names, labels=g.names)),
+				 panel=function(...){
+					 panel.xYplot(...)
+					 panel.segments(x0=-1, y0=med.pop, x1=nrow(xdat)+1, y1=med.pop, col=col.mean, lty=lty.mean)
+				 }
 				 )
 
 }
